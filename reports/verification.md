@@ -47,6 +47,16 @@ Reset restored 49,868 records. Browser checks also compared gasoline mean MPG, B
 
 ## Delivery boundaries
 
-The GitHub Actions workflow is configured to reproduce the pipeline and run analytical checks on Linux. Its cloud outcome is separate from the completed local verification and must be checked after publication. Package versions pin direct dependencies only; cross-platform results can differ slightly due to floating-point implementations.
+The [GitHub Actions run](https://github.com/dangg29/mpg-electrification-analysis/actions/runs/36044991156) for commit `c0c7eac` completed successfully on Linux: dependency installation, the full pipeline, all analytical tests, and report artifact upload passed. The subsequent documentation update does not change executable analysis code. Package versions pin direct dependencies only; cross-platform results can differ slightly due to floating-point implementations.
 
-External dashboard deployment is verified separately after an actual hosted URL is available. A local screenshot or successful configuration is not proof of a hosted deployment.
+## Hosted deployment
+
+- URL: [https://mpg-electrification-analysis.vercel.app](https://mpg-electrification-analysis.vercel.app)
+- Target: production; state: READY.
+- Deployment ID: `dpl_7srspBhrEPZFJA3hvfK2EGz4WaWZ`.
+- Framework: static / Other; no server functions.
+- Scope verified before upload: four asset files, 381,198 bytes; no raw workbook, notebooks, reports, environment files, or credentials.
+- Hosted browser check: all five filter/CSV scenarios passed; no application console errors reported.
+- No external monitoring/drains were configured by this work. Static page and browser checks provide the recorded evidence; continuous monitoring is not claimed.
+
+The generic deployment action was rejected by automatic approval review because its upload scope was unspecified. After explicit user authorization for Vercel, a four-file staging directory and CLI dry run established the narrower upload scope, and that payload deployed successfully. The private GitHub-to-Vercel integration was unavailable, so automatic deployment on Git push is not configured.

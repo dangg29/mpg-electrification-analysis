@@ -31,7 +31,23 @@ Any host that serves these four files over HTTPS can host the dashboard. The rep
 
 For a Vercel deployment, import the repository with the Other framework preset, no build command, and `dashboard` as the output directory; alternatively run the Vercel CLI from the repository root. Review the current hosting plan and account terms before enabling paid options. This application needs only static hosting and makes no paid API calls.
 
-**Deployment status:** local dashboard verified; a hosted Vercel deployment requires user authorization for that destination. No hosted URL is claimed until deployment succeeds.
+**Deployment status:** production deployment is READY at [https://mpg-electrification-analysis.vercel.app](https://mpg-electrification-analysis.vercel.app), verified September 24, 2026. The five browser filter/download cases also passed on the hosted site.
+
+The deployment uploaded only `index.html`, `styles.css`, `app.js`, and `data.json` (381,198 bytes). Local Vercel metadata and credentials were excluded. The private GitHub repository was not connected automatically to Vercel, so future Git pushes do **not** currently redeploy the site. GitHub Actions reproduces and tests the analysis independently.
+
+To redeploy with the same narrow upload scope, from Windows PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Force .work/vercel-dashboard | Out-Null
+Copy-Item dashboard/index.html,dashboard/styles.css,dashboard/app.js,dashboard/data.json .work/vercel-dashboard
+npx.cmd --yes vercel@60.0.0 login
+npx.cmd --yes vercel@60.0.0 link --yes --project mpg-electrification-analysis --scope dangdeptrai29s-projects --cwd .work/vercel-dashboard
+npx.cmd --yes vercel@60.0.0 deploy --dry --json --cwd .work/vercel-dashboard
+npx.cmd --yes vercel@60.0.0 deploy --prod --yes --cwd .work/vercel-dashboard
+```
+
+Login is needed only when signed out. Confirm the dry run contains the four expected assets before deployment. Use your own scope if publishing a fork. The ignored `.work/` directory may contain local authentication files; never commit it.
+
 
 ## Browser checks
 

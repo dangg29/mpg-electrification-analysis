@@ -11,7 +11,7 @@ The original ten-stage outline is implemented as an analysis project with a stat
 - [x] **7. Modeling:** MPG regression, electrification classification, trend forecast, S-curve scenario, chronological evaluation and baseline comparisons.
 - [x] **8. SQL:** SQLite builder, aggregation, CTEs, joins, window functions, rankings, year-over-year and rolling metrics.
 - [x] **9. Dashboard implementation:** four charts, interactive filters, summary/comparison tables, model results, CSV download, responsive layout, deployment configuration.
-- [ ] **9a. Hosted dashboard:** local verification complete; external hosting requires destination authorization and a successful deployment.
+- [x] **9a. Hosted dashboard:** [Vercel production dashboard](https://mpg-electrification-analysis.vercel.app) deployed and verified with five browser filter/download cases.
 - [x] **10. Packaging:** README, project/portfolio write-up, findings, limitations, data dictionary, skills inventory, tests, CI workflow.
 
 ## Optional research extensions
@@ -21,4 +21,4 @@ The original ten-stage outline is implemented as an analysis project with a stat
 - Classifier calibration/threshold selection on a separate validation period.
 - Forecast uncertainty and sensitivity to S-curve bounds.
 
-See [README](README.md) for execution and [verification](reports/verification.md) for delivered evidence. GitHub publication is reported only after the remote push is verified.
+See [README](README.md) for execution and [verification](reports/verification.md) for delivered evidence. Published to the private [GitHub repository](https://github.com/dangg29/mpg-electrification-analysis); the remote commit was verified after pushing.

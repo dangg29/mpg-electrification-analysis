@@ -7,10 +7,12 @@ The project includes executed notebooks, exploratory charts, statistical tests, 
 ## Explore the project
 
 - [Project report: findings, methods, and limitations](reports/project_report.md)
-- [Interactive dashboard](dashboard/) — launch locally using the command below
+- [Live interactive dashboard](https://mpg-electrification-analysis.vercel.app) | [Local setup and deployment](dashboard/README.md)
 - [Skills and knowledge applied](reports/skills_and_knowledge.md)
 - [Data provenance and dictionary](data/README.md)
 - [Implementation and verification record](reports/verification.md)
+
+![Interactive dashboard preview](reports/dashboard_preview.png)
 
 ![Gasoline MPG trends](reports/charts/fleet_mpg_trend.png)
 
@@ -42,7 +44,7 @@ These averages give every configuration equal weight. The 2027 records are prese
 
 ## Quick start
 
-Use **Python 3.14**. The verified local environment is Python 3.14.2 on Windows. Direct package versions are recorded in [requirements.txt](requirements.txt); transitive dependencies are not fully locked.
+Use **Python 3.14**. The project was verified locally with Python 3.14.2 on Windows and rebuilt successfully on Linux in GitHub Actions. Direct package versions are recorded in [requirements.txt](requirements.txt); transitive dependencies are not fully locked.
 
 ```powershell
 # Windows PowerShell (activation is optional)
