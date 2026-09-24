@@ -1,0 +1,10 @@
+﻿venv
+.venv
+.work
+.git
+notebooks
+data
+reports
+scripts
+tests
+sql

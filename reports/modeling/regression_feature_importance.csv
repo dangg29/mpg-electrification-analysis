@@ -1,0 +1,22 @@
+feature,importance
+numeric__displ,0.7589211586638924
+numeric__year,0.11303338177767412
+category__drive_Front-Wheel Drive,0.04033987263498137
+category__segment_Car,0.023620886428741692
+numeric__num_gears,0.015445814599640017
+numeric__cylinders,0.012670936841240859
+category__transmission_type_Automatic,0.007389727868092873
+category__transmission_type_CVT,0.003415545267334783
+category__segment_Sports/Two-Seater,0.0033775685949353133
+category__segment_Special Purpose,0.0030321250063144495
+category__transmission_type_Manual,0.003006721712193177
+category__drive_4-Wheel or All-Wheel Drive,0.0029342880873763424
+category__segment_Wagon,0.0029337303288752333
+category__segment_SUV,0.0023931966696393637
+category__drive_Rear-Wheel Drive,0.002092982199132496
+category__segment_Truck/Pickup,0.0017681907546642803
+category__drive_Part-time 4-Wheel Drive,0.0012216963335393456
+category__segment_Van/Minivan,0.000999450640312264
+category__drive_All-Wheel Drive,0.0008161149277423611
+category__drive_4-Wheel Drive,0.0005361892387913899
+category__drive_2-Wheel Drive,5.042142488600189e-05
